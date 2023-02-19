@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пройдите демо игру Folink</title>
+    <!--    Delete if they fonts connected before -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <svg style="position: absolute; z-index: -100;">
+        <symbol viewBox="0 0 98 24" id="folink">
+            <path d="M31.0456 20.7276V11.0567H29.2988V8.55305H31.0456V7.7676C31.0456 6.70396 31.2228 5.7876 31.5772 5.01851C31.9485 4.23305 32.4633 3.6276 33.1215 3.20215C33.7966 2.77669 34.5814 2.56396 35.4759 2.56396C36.0159 2.56396 36.556 2.62942 37.0961 2.76033C37.653 2.89124 38.2015 3.07942 38.7416 3.32487L38.0581 5.80396C37.8049 5.67305 37.5096 5.56669 37.172 5.48487C36.8345 5.38669 36.5138 5.3376 36.21 5.3376C35.6362 5.3376 35.1974 5.53396 34.8936 5.92669C34.5898 6.31942 34.4379 6.89215 34.4379 7.64487V8.55305H37.6783V11.0567H34.4379V20.7276H31.0456Z" fill="#141414"/>
+            <path d="M45.5586 20.9731C44.4785 20.9731 43.5081 20.8012 42.6473 20.4576C41.7866 20.0976 41.0524 19.6067 40.4449 18.9849C39.8542 18.3631 39.3985 17.6512 39.0778 16.8494C38.7571 16.0476 38.5968 15.2049 38.5968 14.3212C38.5968 13.4212 38.7571 12.5703 39.0778 11.7685C39.3985 10.9667 39.8542 10.2549 40.4449 9.63306C41.0524 9.01124 41.7866 8.52851 42.6473 8.18487C43.5081 7.82487 44.4785 7.64487 45.5586 7.64487C46.6388 7.64487 47.6008 7.82487 48.4446 8.18487C49.3054 8.52851 50.0395 9.01124 50.6471 9.63306C51.2547 10.2549 51.7103 10.9667 52.0141 11.7685C52.3348 12.5703 52.4951 13.4212 52.4951 14.3212C52.4951 15.2049 52.3348 16.0476 52.0141 16.8494C51.7103 17.6512 51.2547 18.3631 50.6471 18.9849C50.0564 19.6067 49.3307 20.0976 48.4699 20.4576C47.6092 20.8012 46.6388 20.9731 45.5586 20.9731ZM42.0904 14.3212C42.0904 15.074 42.2423 15.7449 42.5461 16.334C42.8499 16.9067 43.2633 17.3567 43.7865 17.684C44.3097 18.0112 44.9004 18.1749 45.5586 18.1749C46.2 18.1749 46.7822 18.0112 47.3054 17.684C47.8286 17.3403 48.2421 16.8821 48.5459 16.3094C48.8665 15.7203 49.0269 15.0494 49.0269 14.2967C49.0269 13.5603 48.8665 12.8976 48.5459 12.3085C48.2421 11.7194 47.8286 11.2612 47.3054 10.934C46.7822 10.6067 46.2 10.4431 45.5586 10.4431C44.9004 10.4431 44.3097 10.6149 43.7865 10.9585C43.2633 11.2858 42.8499 11.744 42.5461 12.3331C42.2423 12.9058 42.0904 13.5685 42.0904 14.3212Z" fill="#141414"/>
+            <path d="M55.5259 2.80908H58.9182V16.6036C58.9182 17.1927 59.0194 17.5936 59.222 17.8064C59.4245 18.0027 59.703 18.1009 60.0574 18.1009C60.3274 18.1009 60.6059 18.0682 60.8928 18.0027C61.1797 17.9373 61.4329 17.8554 61.6523 17.7573L62.108 20.2609C61.6523 20.4736 61.1207 20.6373 60.5131 20.7518C59.9055 20.8664 59.357 20.9236 58.8676 20.9236C57.8043 20.9236 56.9773 20.6536 56.3866 20.1136C55.8128 19.5573 55.5259 18.7718 55.5259 17.7573V2.80908Z" fill="#6F5DDD"/>
+            <path d="M63.586 20.7273V7.86544H66.9783V20.7273H63.586ZM63.586 6.07363V2.80908H66.9783V6.07363H63.586Z" fill="#6F5DDD"/>
+            <path d="M82.3673 20.7273H78.9749V13.5109C78.9749 12.48 78.7893 11.7273 78.418 11.2527C78.0467 10.7782 77.532 10.5409 76.8737 10.5409C76.4181 10.5409 75.9539 10.6554 75.4814 10.8845C75.0257 11.1136 74.6122 11.4327 74.2409 11.8418C73.8696 12.2345 73.5996 12.6927 73.4308 13.2164V20.7273H70.0385V7.86544H73.1017V10.2464C73.4392 9.68999 73.8696 9.22363 74.3928 8.84726C74.916 8.45454 75.5151 8.15999 76.1902 7.96363C76.8822 7.7509 77.6079 7.64454 78.3674 7.64454C79.1944 7.64454 79.8694 7.79181 80.3926 8.08635C80.9327 8.36454 81.3377 8.74908 81.6078 9.23999C81.8947 9.71454 82.0888 10.2545 82.19 10.86C82.3082 11.4654 82.3673 12.0791 82.3673 12.7009V20.7273Z" fill="#6F5DDD"/>
+            <path d="M94.38 20.7273L90.5066 15.18L88.7092 16.8982V20.7273H85.3169V2.80908H88.7092V13.6582L94.0509 7.88999H97.6457L92.7091 13.3391L98.0001 20.7273H94.38Z" fill="#6F5DDD"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.54545C0 2.9305 3.02246 0 6.75085 0H11.2514C14.9798 0 18.0023 2.9305 18.0023 6.54545V7.97727H13.5017V6.54545C13.5017 5.34047 12.4942 4.36364 11.2514 4.36364H6.75085C5.50806 4.36364 4.50057 5.34047 4.50057 6.54545V13.0909H0V6.54545Z" fill="#6F5DDD"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0024 17.4545C18.0024 21.0695 14.98 24 11.2516 24H6.75102C3.02262 24 0.000162125 21.0695 0.000162125 17.4545V16.3125H4.50073V17.4545C4.50073 18.6595 5.50822 19.6364 6.75102 19.6364H11.2516C12.4944 19.6364 13.5019 18.6595 13.5019 17.4545V11.4545H18.0024V17.4545Z" fill="#141414"/>
+        </symbol>
+        <symbol viewBox="0 0 93 93" id="logo-sq">
+                <path d="M0 23.5443C0 10.5411 10.5411 0 23.5443 0H69.4557C82.4589 0 93 10.5411 93 23.5443V69.4557C93 82.4589 82.4589 93 69.4557 93H23.5443C10.5411 93 0 82.4589 0 69.4557V23.5443Z" fill="url(#paint0_linear_0_466)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1924 37.1105C32.1924 30.9371 36.9967 25.9326 42.9232 25.9326H50.077C56.0034 25.9326 60.8078 30.9371 60.8078 37.1105V39.5557H53.6539V37.1105C53.6539 35.0527 52.0525 33.3845 50.077 33.3845H42.9232C40.9477 33.3845 39.3462 35.0527 39.3462 37.1105V48.2884H32.1924V37.1105Z" fill="#B3A7FF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M60.8076 55.8701C60.8076 62.0542 56.0033 67.0674 50.0768 67.0674H42.923C36.9966 67.0674 32.1922 62.0542 32.1922 55.8701V53.9164H39.3461V55.8701C39.3461 57.9314 40.9475 59.6025 42.923 59.6025H50.0768C52.0523 59.6025 53.6538 57.9314 53.6538 55.8701V45.6058H60.8076V55.8701Z" fill="white"/>
+                <defs>
+                    <linearGradient id="paint0_linear_0_466" x1="46.5" y1="0" x2="46.5" y2="93" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6B51FF"/>
+                        <stop offset="1" stop-color="#9D51FF"/>
+                    </linearGradient>
+                </defs>
+        </symbol>
+        <symbol viewBox="0 0 44 33" id="arrow">
+                <g filter="url(#filter0_di_0_442)">
+                    <path d="M20.1473 7.33298L6.12571 6.44992C4.97397 6.37738 4 7.29194 4 8.44596V18.6767C4 19.8307 4.97397 20.7453 6.12571 20.6727L20.0818 19.7938C21.5315 19.7025 22.592 21.1384 22.0783 22.4971L21.8601 23.0742C21.1601 24.9257 23.2873 26.5602 24.8961 25.4069L38.8168 15.4282C39.9052 14.648 39.9343 13.0394 38.8748 12.2203L24.914 1.42796C23.3344 0.206829 21.1372 1.79967 21.8066 3.68074L22.1573 4.66647C22.6386 6.0191 21.5802 7.42322 20.1473 7.33298Z" fill="#FF2929"/>
+                </g>
+                <defs>
+                    <filter id="filter0_di_0_442" x="0" y="0" width="43.6519" height="32.7915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="3"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_442"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_442" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.33 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect2_innerShadow_0_442"/>
+                    </filter>
+                </defs>
+        </symbol>
+        <symbol viewBox="0 0 57 57" id="smile">
+            <g filter="url(#filter0_i_0_421)">
+                <circle cx="28.5" cy="28.5" r="28.5" fill="url(#paint0_linear_0_421)"/>
+            </g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4901 39.2504C18.8614 39.8791 18.8179 40.8961 19.4742 41.496C21.8561 43.6729 25.0271 45.0009 28.5082 45.0009C32.1886 45.0009 35.5223 43.5166 37.9433 41.1139C38.5537 40.5082 38.4936 39.5307 37.8855 38.9227C37.1586 38.1957 35.9591 38.2952 35.1975 38.9858C33.4296 40.5893 31.083 41.5663 28.5082 41.5663C26.08 41.5663 23.8547 40.6974 22.1264 39.2535C21.3577 38.6114 20.1983 38.5422 19.4901 39.2504Z" fill="#2D292A"/>
+            <g filter="url(#filter1_d_0_421)">
+                <circle cx="16.5" cy="21.5" r="7.5" fill="url(#paint1_linear_0_421)"/>
+            </g>
+            <circle cx="16.5" cy="21.5" r="4.5" fill="#2D292A"/>
+            <g filter="url(#filter2_d_0_421)">
+                <circle cx="40.5" cy="21.5" r="7.5" fill="url(#paint2_linear_0_421)"/>
+            </g>
+            <circle cx="40.5" cy="21.5" r="4.5" fill="#2D292A"/>
+            <defs>
+                <filter id="filter0_i_0_421" x="0" y="-3" width="57" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-3"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.9125 0 0 0 0 0.608181 0 0 0 0 0.387812 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_421"/>
+                </filter>
+                <filter id="filter1_d_0_421" x="8" y="14" width="17" height="17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.5"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_421"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_421" result="shape"/>
+                </filter>
+                <filter id="filter2_d_0_421" x="32" y="14" width="17" height="17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.5"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_421"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_421" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_0_421" x1="28.5" y1="0" x2="28.5" y2="57" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFD56D"/>
+                    <stop offset="1" stop-color="#E6A035"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_0_421" x1="16.5" y1="14" x2="16.5" y2="29" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="#F8F8F8"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_0_421" x1="40.5" y1="14" x2="40.5" y2="29" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="#F8F8F8"/>
+                </linearGradient>
+            </defs>
+        </symbol>
+        <symbol viewBox="0 0 14 12" id="back">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24264 11.3033L0.46967 6.53034C0.176776 6.23745 0.176776 5.76257 0.46967 5.46968L5.24264 0.696708C5.53553 0.403815 6.01041 0.403815 6.3033 0.696708C6.59619 0.989602 6.59619 1.46448 6.3033 1.75737L2.81066 5.25001L14 5.25001L14 6.75001L2.81066 6.75001L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033Z" fill="white"/>
+        </symbol>
+        <symbol  viewBox="0 0 15 13" id="send">
+                <path d="M15 6.5L0 13L2.5 6.5L0 0L15 6.5Z" fill="#F8F8F8"/>
+        </symbol>
+        <symbol  viewBox="0 0 26 26" id="checked">
+                <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_0_1213)"/>
+                <g filter="url(#filter0_d_0_1213)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9998 8.99997C20.7809 9.78102 20.7809 11.0473 19.9999 11.8284L14.1212 17.7071C12.9496 18.8786 11.0501 18.8787 9.87853 17.7071L7.99985 15.8284C7.2188 15.0473 7.2188 13.781 7.99985 13C8.7809 12.2189 10.0472 12.2189 10.8283 13L11.3534 13.5251C11.7104 13.8821 12.2893 13.8821 12.6463 13.5251L17.1714 8.99997C17.9525 8.21892 19.2188 8.21892 19.9998 8.99997Z" fill="white"/>
+                </g>
+                <defs>
+                    <filter id="filter0_d_0_1213" x="5.41406" y="8.41418" width="17.1714" height="14.1716" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1213"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1213" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_0_1213" x1="13" y1="0" x2="13" y2="26" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7CE849"/>
+                        <stop offset="1" stop-color="#27B92D"/>
+                    </linearGradient>
+                </defs>
+        </symbol>
+    </svg>
+    <section class="section-game">
+        <img src="images/section-game-bg.png" alt="" class="bg" loading="lazy">
+        <div class="container">
+            <div class="desc">
+                <h3 class="title">Пройдите демо игру Folink</h3>
+                <div class="txt">
+                    Игра обучение заработка на сервисе Folink, вы должны заработать 10 000р и перевести на свой счет
+                </div>
+                <button class="start-game">
+                    <svg class="icon" width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 6.90192C16.5 8.05662 16.5 10.9434 14.5 12.0981L6.25 16.8612C4.25 18.0159 1.75 16.5725 1.75 14.2631V4.73686C1.75 2.42746 4.25 0.984083 6.25 2.13878L14.5 6.90192Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                    Начать игру
+                </button>
+            </div>
+            <div class="box">
+                <div class="folink-logo">
+                    <div class="icon-wrap">
+                        <svg width="25" height="36" viewBox="0 0 25 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_104_468888)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.345703 10.024C0.345703 4.77995 4.4268 0.528809 9.46109 0.528809H15.538C20.5723 0.528809 24.6534 4.77995 24.6534 10.024V12.1011H18.5765V10.024C18.5765 8.27598 17.2161 6.85894 15.538 6.85894H9.46109C7.78299 6.85894 6.42263 8.27598 6.42263 10.024V19.5192H0.345703V10.024Z" fill="#B3A7FF"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6543 25.9595C24.6543 31.2127 20.5732 35.4712 15.5389 35.4712H9.46199C4.4277 35.4712 0.346605 31.2127 0.346605 25.9595V24.2999H6.42353V25.9595C6.42353 27.7105 7.78389 29.1301 9.46199 29.1301H15.5389C17.217 29.1301 18.5774 27.7105 18.5774 25.9595V17.2404H24.6543V25.9595Z" fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_104_468888">
+                                    <rect width="25" height="36" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="folink-txt">
+                        <div class="folink-ttl">
+                            Folink<span>Game</span>
+                        </div>
+                        Прошли 2 490 человек
+                    </div>
+
+                </div>
+                <button type="button" class="start-game">
+                    <svg class="icon" width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 6.90192C16.5 8.05662 16.5 10.9434 14.5 12.0981L6.25 16.8612C4.25 18.0159 1.75 16.5725 1.75 14.2631V4.73686C1.75 2.42746 4.25 0.984083 6.25 2.13878L14.5 6.90192Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <svg class="icon-handle" width="102" height="110" viewBox="0 0 102 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_di_12_2876)">
+                            <path d="M56.2754 22.8208C57.3813 20.7133 59.9839 19.902 62.0914 21.0079C64.1989 22.1137 65.0102 24.7164 63.9043 26.8239L55.3978 43.0354L55.8982 42.0818C57.0041 39.9743 59.6067 39.163 61.7142 40.2689C63.8217 41.3747 64.633 43.9774 63.5271 46.0849L62.5403 47.9656C63.6534 45.8783 66.2445 45.0779 68.3424 46.1788C70.4088 47.263 71.2292 49.7889 70.2168 51.8732C70.1787 51.9515 70.1375 51.9474 70.1672 52.0292C70.2362 52.2186 70.5152 52.3565 70.6863 52.2498C71.9413 51.4675 73.5663 51.3527 74.9704 52.0894C77.0771 53.1949 77.8888 55.7988 76.7833 57.9054L66.7756 76.9777C64.5649 81.1908 59.3567 82.8142 55.1437 80.6035L42.3919 73.9124C38.3448 71.7888 35.3072 68.1444 33.9476 63.7824L31.3601 55.4818C31.1788 54.9001 30.8927 54.3564 30.5159 53.8776L24.5189 46.2573C26.4441 42.6221 29.8746 43.0207 32.7285 44.5182C33.6536 45.0036 34.5151 45.5249 35.4199 46.2544C38.3258 48.5971 42.8185 48.4664 44.5529 45.1612L56.2754 22.8208Z" fill="white"/>
+                        </g>
+                        <defs>
+                            <filter id="filter0_di_12_2876" x="0.518555" y="0.513428" width="100.759" height="109.078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="12"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_2876"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_2876" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="-4"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect2_innerShadow_12_2876"/>
+                            </filter>
+                        </defs>
+                    </svg>
+
+                    Начать игру
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="game-block" id="game-block">
+        <div class="game-head">
+            <div class="folink-logo">
+                <div class="icon-wrap">
+                    <svg width="25" height="36" viewBox="0 0 25 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_104_46)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.345703 10.024C0.345703 4.77995 4.4268 0.528809 9.46109 0.528809H15.538C20.5723 0.528809 24.6534 4.77995 24.6534 10.024V12.1011H18.5765V10.024C18.5765 8.27598 17.2161 6.85894 15.538 6.85894H9.46109C7.78299 6.85894 6.42263 8.27598 6.42263 10.024V19.5192H0.345703V10.024Z" fill="#B3A7FF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6543 25.9595C24.6543 31.2127 20.5732 35.4712 15.5389 35.4712H9.46199C4.4277 35.4712 0.346605 31.2127 0.346605 25.9595V24.2999H6.42353V25.9595C6.42353 27.7105 7.78389 29.1301 9.46199 29.1301H15.5389C17.217 29.1301 18.5774 27.7105 18.5774 25.9595V17.2404H24.6543V25.9595Z" fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_104_46">
+                                <rect width="25" height="36" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="folink-txt">
+                    <div class="folink-ttl">
+                        Folink<span>Game</span>
+                    </div>
+                    Прошли 2 490 человек
+                </div>
+
+            </div>
+            <button type="button"  class="exit js-close-game">
+                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 1L2 5.5L6.5 10" stroke="white" stroke-width="2"/>
+                </svg>
+                Выйти
+            </button>
+            <div class="center">
+                <button type="button" class="folink active">
+                    <svg class="icon" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.90909C0 2.19788 2.26024 0 5.04838 0H8.41397C11.2021 0 13.4623 2.19787 13.4623 4.90909V5.98295H10.0968V4.90909C10.0968 4.00535 9.34335 3.27273 8.41397 3.27273H5.04838C4.119 3.27273 3.36559 4.00535 3.36559 4.90909V9.81818H0V4.90909Z" fill="#42339D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4624 13.0909C13.4624 15.8021 11.2022 18 8.41402 18H5.04844C2.26029 18 5.62668e-05 15.8021 5.62668e-05 13.0909V12.2344H3.36564V13.0909C3.36564 13.9946 4.11905 14.7273 5.04844 14.7273H8.41402C9.3434 14.7273 10.0968 13.9946 10.0968 13.0909V8.59091H13.4624V13.0909Z" fill="#D5D5D5"/>
+                    </svg>
+                    Folink
+                    <svg class="icon-arrow">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </button>
+
+                <button type="button" class="whatsapp">
+                    <svg class="icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_48)">
+                            <path d="M17.5282 2.90436C15.6494 1.03256 13.15 0.00106812 10.4899 0C7.83582 0 5.33246 1.03058 3.44128 2.90192C1.54675 4.77646 0.502441 7.26761 0.5 9.90738V9.91043V9.91226C0.500305 11.51 0.920074 13.1218 1.71689 14.593L0.527313 20L5.99652 18.756C7.38171 19.454 8.92728 19.8221 10.4861 19.8227H10.4901C13.1437 19.8227 15.6471 18.792 17.5386 16.9205C19.4348 15.0444 20.4796 12.5565 20.4808 9.91501C20.4815 7.29218 19.4331 4.8024 17.5282 2.90436ZM10.4899 18.2617H10.4864C9.08673 18.2611 7.69986 17.9097 6.47595 17.2452L6.21732 17.1048L2.58054 17.932L3.37048 14.3419L3.2182 14.0793C2.46106 12.7736 2.06097 11.3322 2.06097 9.91058C2.06387 5.30899 5.8447 1.56097 10.4896 1.56097C12.7336 1.56189 14.842 2.43179 16.4265 4.01016C18.0349 5.61295 18.9204 7.70981 18.9196 9.91455C18.9178 14.5172 15.1362 18.2617 10.4899 18.2617Z" fill="#C9BAE9"/>
+                            <path d="M7.77139 5.5415H7.33347C7.18103 5.5415 6.93353 5.59857 6.72418 5.82639C6.51468 6.05435 5.92432 6.60535 5.92432 7.72595C5.92432 8.84656 6.74326 9.92932 6.85739 10.0815C6.97168 10.2334 8.4382 12.6065 10.7609 13.5194C12.6913 14.2781 13.0842 14.1272 13.5031 14.0892C13.9221 14.0513 14.8551 13.5383 15.0456 13.0066C15.236 12.4748 15.236 12.0189 15.1789 11.9236C15.1217 11.8287 14.9693 11.7718 14.7408 11.658C14.5123 11.544 13.3923 10.9837 13.1828 10.9076C12.9733 10.8317 12.821 10.7937 12.6685 11.0219C12.5161 11.2495 12.0674 11.7762 11.934 11.9282C11.8008 12.0804 11.6674 12.0994 11.4388 11.9854C11.2103 11.8712 10.4818 11.6264 9.60886 10.8506C8.92938 10.2469 8.45789 9.4769 8.32452 9.24893C8.19131 9.02112 8.31033 8.89783 8.42493 8.78415C8.52762 8.68222 8.66632 8.54275 8.78061 8.40985C8.89474 8.27679 8.92725 8.18188 9.00354 8.02991C9.07968 7.87793 9.04153 7.74487 8.98447 7.63104C8.92725 7.51706 8.48871 6.39081 8.28546 5.94037H8.28561C8.11441 5.56104 7.9342 5.54822 7.77139 5.5415Z" fill="#C9BAE9"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_0_48">
+                                <rect width="20" height="20" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="icon-arrow">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                    Whatsapp
+                </button>
+                <div class="balance">Ваш игровой баланс: <span>0</span></div>
+            </div>
+        </div>
+
+        <div class="game-window">
+            <div class="steps">
+                <div class="step step-1  active" id="step1">
+                    <img src="images/game-window-top.png" class="browser-panel" loading="lazy">
+                    <div class="body">
+                        <div class="head">
+                            <svg class="logo">
+                                <use xlink:href="#folink"></use>
+                            </svg>
+                        </div>
+                        <svg class="logo-sq">
+                            <use xlink:href="#logo-sq"></use>
+                        </svg>
+                        <div class="desc">
+                            <span>Цель игры:</span>
+                             Научится пользоваться сервисом Folink и заработать виртуальные  <span class="sum">10 000</span>
+                            <br>
+                            <button type="button" data-step="step2" class="btn js-next">Начать зарабатывать</button>
+                        </div>
+                    </div>
+
+                    <div class="game-footer">
+                        <div class="icon-wrap">
+                            <img src="images/smile.png" alt="">
+                            <svg class="icon">
+                                <use xlink:href="#smile"></use>
+                            </svg>
+                        </div>
+                        <div class="text">
+                            Привет! Я научу Вас зарабатывать с помощью сервиса Folink, давайте попробуем заработать первые виртуальные 10 000
+                        </div>
+                    </div>
+                </div>
+                <div class="step get-sum" id="get-sum">
+                    <div class="box">
+                        <img src="images/smile.png" alt="Это виртуальный баланс" loading="lazy">
+                        <div class="title">Это виртуальный баланс</div>
+                        <button type="button" class="close">Продолжить игру</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/folink.js"></script>
+
+</body>
+</html>

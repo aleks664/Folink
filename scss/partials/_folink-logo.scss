@@ -1,0 +1,32 @@
+.folink-logo {
+  display: flex;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.1;
+  color: #586380;
+  .icon-wrap {
+    background: linear-gradient(180deg, #6B51FF 0%, #9D51FF 100%);
+    border-radius: 20px;
+    max-width: 79px;
+    flex: 0 0 79px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .folink-txt {
+    padding-left: 21px;
+  }
+  .folink-ttl {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.1;
+    color: #000;
+    span {
+      font-weight: normal;
+      color: #828282;
+    }
+  }
+}

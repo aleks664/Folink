@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins/breakpoints";
+@import "partials/folink-logo";
+@import "partials/section-game";
+@import "partials/game-block.scss";
+html {
+  &.game-open {
+    height: 100%;
+    overflow: hidden;
+    body {
+      overflow: hidden;
+    }
+  }
+}
