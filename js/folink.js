@@ -41,24 +41,24 @@ class gameFolink {
             count   = 0,
             timeout = 0;
         function typing(){
-            if ($text.closest('.step.active')) {
-                spans[count].classList.add('visible');
-                if(spans[count].innerText == ' ' || spans[count].innerHTML == ' '){
-                    // timeout = Math.floor(Math.random() * Math.floor(1000));
-                    timeout = 50;
-                    spans[count].classList.add('cursor');
-                }else{
-                    timeout = 50;
-                }
-
-                if (count < txt.length - 1){
-                    setTimeout(() => {
-                        spans[count].classList.remove('cursor');
-                        count ++;
-                        typing();
-                    }, timeout);
-                }
-            }
+            // if ($text.closest('.step.active')) {
+            //     spans[count].classList.add('visible');
+            //     if(spans[count].innerText == ' ' || spans[count].innerHTML == ' '){
+            //         // timeout = Math.floor(Math.random() * Math.floor(1000));
+            //         timeout = 50;
+            //         spans[count].classList.add('cursor');
+            //     }else{
+            //         timeout = 50;
+            //     }
+            //
+            //     if (count < txt.length - 1){
+            //         setTimeout(() => {
+            //             spans[count].classList.remove('cursor');
+            //             count ++;
+            //             typing();
+            //         }, timeout);
+            //     }
+            // }
 
         }
         typing();
