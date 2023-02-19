@@ -31,35 +31,27 @@ class gameFolink {
     }
 
     typingText($text) {
-        let txt = $text.textContent.trim();
+        let txt = $text.textContent.replace(/\s+/g, ' ').trim();
         let newTxt = '';
-        for(let i = 0; i < txt.length; i++){
-            newTxt += '<span>'+txt[i]+'</span>';
-        }
-        $text.innerHTML = newTxt;
-        let spans   = $text.querySelectorAll('span'),
-            count   = 0,
-            timeout = 0;
-        function typing(){
-            // if ($text.closest('.step.active')) {
-            //     spans[count].classList.add('visible');
-            //     if(spans[count].innerText == ' ' || spans[count].innerHTML == ' '){
-            //         // timeout = Math.floor(Math.random() * Math.floor(1000));
-            //         timeout = 50;
-            //         spans[count].classList.add('cursor');
-            //     }else{
-            //         timeout = 50;
-            //     }
-            //
-            //     if (count < txt.length - 1){
-            //         setTimeout(() => {
-            //             spans[count].classList.remove('cursor');
-            //             count ++;
-            //             typing();
-            //         }, timeout);
-            //     }
-            // }
 
+        $text.innerHTML = newTxt;
+        let count   = 0,
+            timeout = 50;
+        function typing(){
+            if ($text.closest('.step.active')) {
+                let interval =  setTimeout(() => {
+                    if (count < txt.length && $text.closest('.step.active')) {
+                        newTxt += txt[count]
+                        $text.innerHTML = newTxt +'|';
+                        count ++;
+                        typing();
+                    } else {
+                        clearTimeout(interval);
+                        $text.innerHTML = newTxt;
+                        clearTimeout(interval);
+                    }
+                }, timeout);
+            }
         }
         typing();
     }
