@@ -46,9 +46,7 @@ class gameFolink {
                         count ++;
                         typing();
                     } else {
-                        clearTimeout(interval);
                         $text.innerHTML = newTxt;
-                        clearTimeout(interval);
                     }
                 }, timeout);
             }
