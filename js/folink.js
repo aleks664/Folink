@@ -31,7 +31,10 @@ class gameFolink {
     }
 
     typingText($text) {
-        let txt = $text.textContent.replace(/\s+/g, ' ').trim();
+        let txt = $text.dataset.message ? $text.dataset.message: $text.textContent.replace(/\s+/g, ' ').trim();
+        if (!$text.dataset.message) {
+            $text.dataset.message = $text.textContent.replace(/\s+/g, ' ').trim();
+        }
         let newTxt = '';
 
         $text.innerHTML = newTxt;
